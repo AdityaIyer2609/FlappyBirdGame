@@ -1,2 +1,2 @@
 # FlappyBirdGame
-Created this FlappyBird game using HTML,CSS and JavaScript. Wrote functionality in JavaScript. Plat this classic game and enjoy
+Created this FlappyBird game using HTML,CSS and JavaScript. Wrote functionality in JavaScript. Play this classic game and enjoy
