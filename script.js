@@ -12,12 +12,12 @@ hole.addEventListener('animationiteration', () => {
 setInterval(function(){
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     if(jumping==0){
-        character.style.top = (characterTop+3)+"px";
+        character.style.top = (characterTop+1)+"px";
     }
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
     var cTop = -(500-characterTop);
-    if((characterTop>480)||((blockLeft<20)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>holeTop+130)))){
+    if((characterTop>480)||((blockLeft<20)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>holeTop+120)))){
         alert("Game over. Score: "+(counter-1));
         character.style.top = 100 + "px";
         counter=0;
@@ -58,7 +58,7 @@ setInterval(function(){
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
     var cTop = -(500-characterTop);
-    if((characterTop>480)||((blockLeft<20)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>holeTop+130)))){
+    if((characterTop>470)||((blockLeft<30)&&(blockLeft>-50)&&((cTop<holeTop)||(cTop>holeTop+120)))){
         alert("Game over. Score: "+(counter-1));
         character.style.top = 100 + "px";
         counter=0;
